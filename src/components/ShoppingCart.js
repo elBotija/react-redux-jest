@@ -14,7 +14,7 @@ const ShoppingCart = ({cart, removeFromCart}) => {
 
   return (
     <Panel header="Shopping Cart">
-      <Table fill>
+      <Table fill='true'>
         <tbody>
           {cart.map(product =>
             <tr key={product.id}>

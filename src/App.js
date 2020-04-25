@@ -3,12 +3,9 @@ import { Navbar, Grid, Row, Col } from 'react-bootstrap';
 import ProductList from './components/ProductList';
 import ShoppingCart from './components/ShoppingCart';
 import './App.css';
-import { loadProducts } from './actionCreators';
-import store from './store'
 
 class App extends Component {
   render() {
-    store.dispatch(loadProducts())
     return (
       <div>
         <Navbar inverse staticTop>
